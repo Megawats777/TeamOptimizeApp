@@ -17,11 +17,12 @@ public class StyleSelectionManager : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        // Disable all the styles at start
+        clearAllStyles();
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
 	
 	}
@@ -31,7 +32,7 @@ public class StyleSelectionManager : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("M_Level_Menu");
     }
-
+    
     // Open the business style
     public void openBusinessStyle()
     {

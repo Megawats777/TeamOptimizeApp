@@ -5,14 +5,11 @@ using System.Collections;
 public class StyleSelectionManager : MonoBehaviour
 {
     /*--The Style Gameobjects--*/
-    [SerializeField]
-    private GameObject businessStyle;
+    public GameObject businessStyle;
 
-    [SerializeField]
-    private GameObject loungeStyle;
+    public GameObject loungeStyle;
 
-    [SerializeField]
-    private GameObject entertainmentStyle;
+    public GameObject entertainmentStyle;
 
     // Use this for initialization
     void Start ()

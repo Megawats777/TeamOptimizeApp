@@ -4,15 +4,16 @@ using System.Collections;
 public class CameraSwitchManager : MonoBehaviour
 {
     /*--The Cameras in the level--*/
-    [SerializeField]
-    private GameObject topCamera;
+    public GameObject topCamera;
 
-    [SerializeField]
-    private GameObject perspectiveCamera;
+    public GameObject perspectiveCamera;
 
 	// Use this for initialization
 	void Start ()
     {
+        // Enable the top camera
+        topCamera.SetActive(true);
+
         // Disable the perspective camera
         perspectiveCamera.SetActive(false);
 	}

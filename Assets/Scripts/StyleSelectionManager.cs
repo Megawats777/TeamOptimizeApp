@@ -10,6 +10,10 @@ public class StyleSelectionManager : MonoBehaviour
     public GameObject loungeStyle;
 
     public GameObject entertainmentStyle;
+    public GameObject styleHUD;
+    public bool isHUDActive = true;
+
+    bool isInPerspectiveMode = false;
 
     // Use this for initialization
     void Start ()
@@ -71,4 +75,31 @@ public class StyleSelectionManager : MonoBehaviour
         businessStyle.SetActive(false);
     }
 
+    // Hide or show style selction HUD
+    public void controlHUDVisibility()
+    {
+        if (isHUDActive == true)
+        {
+            isHUDActive = false;
+            styleHUD.SetActive(false);
+        }
+        else if (isHUDActive == false)
+        {
+            isHUDActive = true;
+            styleHUD.SetActive(true);
+        }
+    }
+
+    // Hide the style HUD
+    public void hideStyleHUD()
+    {
+        isHUDActive = false;
+        styleHUD.SetActive(false);
+    }
+
+    // Exit the program
+    public void exitProgram()
+    {
+        Application.Quit();
+    }
 }

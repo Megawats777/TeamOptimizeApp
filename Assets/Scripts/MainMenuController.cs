@@ -23,4 +23,10 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadSceneAsync(levelName);
     }
 
+    // Exit the program
+    public void exitProgram()
+    {
+        Application.Quit();
+        print("Program End");
+    }
 }

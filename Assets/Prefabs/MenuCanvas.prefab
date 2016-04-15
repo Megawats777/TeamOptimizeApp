@@ -548,7 +548,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Team Optimize App
+  m_Text: My Room
 --- !u!114 &11465118
 MonoBehaviour:
   m_ObjectHideFlags: 1
